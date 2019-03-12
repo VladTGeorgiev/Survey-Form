@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 class="center" id="title">
+        <strong>Restaurant Experience Survey</strong>
+    </h1>
+    <main>
+        <p class="center" id="description">Please, fill in the below form to express the level of satisfaction <br> with our service and  to help us implore where needed</p>
+        <form id="survey-form" method="GET" action="">
+            <div class="border">
+                <h1 id="personal-details-label">Personal details</h1>
+                <div class="row">
+                    <div  class="left">
+                        <label id="name-label">* Name</label>
+                    </div>
+                        <div  class="right">
+                            <input class="input-personal-details" autofocus id="name" type="text" placeholder=" John Smith" required>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label id="email-label">* Email</label>
+                    </div>
+                        <div  class="right">
+                            <input class="input-personal-details" id="email" type="email" placeholder=" john.smith@email.com" required>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label id="tel-label">* Phone Number</label>
+                    </div>
+                        <div  class="right">
+                            <input class="input-personal-details" id="tel" type="number" placeholder=" 01234 567 890" pattern="(0-9){11}" required>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label id="number-label">* Your age</label>
+                    </div>  
+                        <div class="right">
+                            <input class="input-personal-details" id="number" type="number" placeholder=" Age" min="16" max="120" required>
+                        </div>
+                </div>  
+            </div>
+                <label class="left" id="date-label">Date of your visit</label>
+                    <input class="input" class="right" type="date" placeholder=" 01/01/2018" date-inline-picker="true">
+            </div>
+            </div>
+                <label class="left" id="name">How much time did you spend in our restaurant?</label>
+                    <input class="input-time" class="right" type="number" placeholder=" hr" min="0" max="3"> 
+                    <input class="input-time" class="right" type="number" placeholder=" mins" min="1" max="59"> 
+            </div>
+            <div>
+                <label class="left" id="type-of-visit">Type of the visit</label>
+                    <select class="input" class="right" name="type-of-visit" id="dropdown" required>
+                        <option disabled value>Select an option</option>
+                        <option value="1">Dine In</option>
+                        <option value="2">Take Out</option>
+                    </select>
+            </div>
+            <div class="section" >
+                <label class="left" id="type-of-menu">Type of menu available at the time</label>
+                    <div class="right">
+                        <div>
+                        <input class="radio" type="radio" name="type-of-menu" value="1">Breakfast</input></div>
+                        <div>
+                        <input class="radio" type="radio" name="type-of-menu" value="2">Lunch</input></div>
+                        <div>
+                        <input class="radio" type="radio" name="type-of-menu" value="3">Dinner</input></div>
+                    </div>
+            </div>
+            <div class="section">
+                    <div class="left">
+                        <label id="type-of-items">What did your menu consist of</label>
+                    </div>
+                    <div class="right">
+                        <div class="checkbox"><input type="checkbox" value="1">Soup</input></div>
+                        <div class="checkbox"><input type="checkbox" value="2">Hot Starter</input></div>
+                        <div class="checkbox"><input type="checkbox" value="3">Cold Starter</input></div>
+                        <div class="checkbox"><input type="checkbox" value="4">Main Course</input></div>
+                        <div class="checkbox"><input type="checkbox" value="5">Dessert</input></div>
+                    </div>
+            </div>
+            <div class="border">
+                <h3 class="center" >Please assess your experience on the below criteria</h3>
+                    <label class="assessment">Quality of food</label>
+                        <div class="assessment-value">
+                            <input type="radio" name="quality-of-food" value="1">Excellent</input>
+                            <input type="radio" name="quality-of-food" value="2">Good</input>
+                            <input type="radio" name="quality-of-food" value="3">Fair</input>
+                            <input type="radio" name="quality-of-food" value="4">Poor</input>
+                        </div>
+                    <label class="assessment">Portion size</label>
+                        <div class="assessment-value">
+                            <input type="radio" name="portion-size" value="1">Excellent</input>
+                            <input type="radio" name="portion-size" value="2">Good</input>
+                            <input type="radio" name="portion-size" value="3">Fair</input>
+                            <input type="radio" name="portion-size" value="4">Poor</input>
+                        </div>
+                    <label class="assessment">Ease of ordering</label>
+                        <div class="assessment-value">
+                            <input type="radio" name="ease" value="1">Excellent</input>
+                            <input type="radio" name="ease" value="2">Good</input>
+                            <input type="radio" name="ease" value="3">Fair</input>
+                            <input type="radio" name="ease" value="4">Poor</input>
+                        </div>
+                    <label class="assessment">Service</label>
+                        <div class="assessment-value">
+                            <input type="radio" name="service" value="1">Excellent</input>
+                            <input type="radio" name="service" value="2">Good</input>
+                            <input type="radio" name="service" value="3">Fair</input>
+                            <input type="radio" name="service" value="4">Poor</input>
+                        </div>
+                    <label class="assessment">Cleanliness</label>
+                        <div class="assessment-value">
+                            <input type="radio" name="cleanliness" value="1">Excellent</input>
+                            <input type="radio" name="cleanliness" value="2">Good</input>
+                            <input type="radio" name="cleanliness" value="3">Fair</input>
+                            <input type="radio" name="cleanliness" value="4">Poor</input>
+                        </div>
+                    <label class="assessment">Overall value</label>
+                        <div class="assessment-value">
+                            <input class="one" type="radio" name="value" value="1">Excellent</input>
+                            <input class="two" type="radio" name="value" value="2">Good</input>
+                            <input class="three" type="radio" name="value" value="3">Fair</input>
+                            <input class="four" type="radio" name="value" value="4">Poor</input>
+                        </div>
+            </div>
+            <div>
+                <label class="left" id="comments">Any other comments or suggestions?</label>
+                    <textarea  class="input" type="text" placeholder=" Enter your comments here..." maxlength="1000" rows="10"></textarea>
+            </div>
+            <div class="center">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </main> 
+</body>
+</html>
